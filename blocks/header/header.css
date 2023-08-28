@@ -237,6 +237,11 @@ header nav .nav-sections ul > li > ul > li {
     font-weight: 500;
   }
 
+  header nav .nav-sections > ul > li:hover {
+
+    color: rgb(239, 69, 69);
+  }
+
   header nav .nav-sections > ul > li > ul {
     display: none;
     position: relative;

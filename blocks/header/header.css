@@ -240,6 +240,7 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections > ul > li:hover {
 
     color: rgb(239, 69, 69);
+    cursor: pointer;
   }
 
   header nav .nav-sections > ul > li > ul {

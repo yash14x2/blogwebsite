@@ -91,7 +91,7 @@ display: table-cell;
       transform: translateX(0);
     }
     100% {
-      right: 20%;
+      right: 10%;
       transform: translateX(0%);
     }
 }

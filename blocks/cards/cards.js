@@ -23,3 +23,20 @@ const pictureElements = document.querySelectorAll('.default-content-wrapper pict
 pictureElements.forEach((picture) => {
   picture.classList.add('slide');
 });
+
+
+// Select the .default-content-wrapper element
+const defaultContentWrapper = document.querySelector(".default-content-wrapper");
+
+// Set styles for the element
+defaultContentWrapper.style.width = "60%";
+defaultContentWrapper.style.height = "500px";
+defaultContentWrapper.style.position = "relative";
+defaultContentWrapper.style.boxShadow = "0px 0px 3px blue";
+
+// Add more styles as needed
+
+slide = document.getElementsByClassName("slide");
+slide.style.width ="100%";
+slide.style.height = "100%";
+slide.style.position = "absolute";

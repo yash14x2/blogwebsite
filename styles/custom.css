@@ -22,3 +22,9 @@ main .section.tekno-strip {
 .cxm-card-col-wrapper ul{
   padding-left:20px;
 }
+.cxm-card-col-wrapper .columns-wrapper .columns-2-cols div{
+  margin-bottom:32px;
+}
+.cxm-card-col-wrapper .columns-wrapper .columns-2-cols div:last-child{
+  margin-bottom:0;
+}

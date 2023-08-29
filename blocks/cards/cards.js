@@ -76,6 +76,7 @@ for (let i = 0; i < slides.length; i++) {
 const slideArray = Array.from(slides);
 
 slideArray.forEach((slide, index) => {
+  slide.style.position = 'relative'; 
   slide.style.left = `${index * 100}%`;
   slide.style.top = "30px"; // You should specify a unit for the top value, like "px"
 });

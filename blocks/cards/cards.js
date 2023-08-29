@@ -71,11 +71,17 @@ export default function decorate(block) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+  // This will be executed once the DOM is fully loaded
+  // Call the function to generate the carousel structure
+  const block = document.querySelector(".carousel-block"); // Replace with the actual selector
+  decorate(block);
+
+  // Now that the structure is generated, proceed to set up the carousel behavior
   const carousel = document.querySelector(".cards-carousel");
   const cards = document.querySelectorAll(".cards-carousel li");
   const prevBtn = document.querySelector(".prev-btn");
   const nextBtn = document.querySelector(".next-btn");
-  console.log(carousel)
+  console.log(carousel);
 
   let currentIndex = 0;
   const cardWidth = cards[0].offsetWidth;
@@ -105,6 +111,3 @@ document.addEventListener("DOMContentLoaded", function () {
   prevBtn.addEventListener("click", prevCard);
   nextBtn.addEventListener("click", nextCard);
 });
-
-
-

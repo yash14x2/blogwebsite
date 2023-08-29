@@ -62,29 +62,29 @@ defaultContentWrapper.style.margin =   "auto";
 defaultContentWrapper.style.overflow = "hidden";
 
 
-const slides = document.getElementsByClassName("slide");
+const slides = document.querySelectorAll(".slide");
+var counter = 0;
 
 // Loop through each slide and apply styles 
 for (let i = 0; i < slides.length; i++) {
   slides[i].style.width = "100%";
   slides[i].style.height = "100%";
   slides[i].style.position = "absolute";
-  slides[i].style.left = `${i * 100}%`;
+  
   // slides[i].style.transition = "absolute";
 }
 
-const slideArray = Array.from(slides);
-console.log(slideArray);
 
-slideArray.forEach((slide, index) => {
+
+slides.forEach((slide, index) => {
   slide.style.left = `${index * 100}%`;
   slide.style.top = "30px"; // You should specify a unit for the top value, like "px"
 });
 
-var counter = 0;
+
 
 const slideimage = () => {
-  slideArray.forEach((slide) => {
+  slides.forEach((slide) => {
     slide.style.transform = `translateX(-${counter * 100}%)`;
   });
 }

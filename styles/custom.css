@@ -92,7 +92,7 @@ display: table-cell;
       transform: translateX(0);
     }
     100% {
-      right: 10%;
+      right: 20%;
       transform: translateX(0%);
     }
 

@@ -62,7 +62,7 @@ defaultContentWrapper.style.margin =   "auto";
 defaultContentWrapper.style.overflow = "hidden";
 
 
-const slides = document.getElementsByClassName("slide");
+const slides = [...document.getElementsByClassName("slide")];
 
 // Loop through each slide and apply styles 
 for (let i = 0; i < slides.length; i++) {

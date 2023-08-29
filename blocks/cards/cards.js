@@ -22,7 +22,7 @@ export default function decorate(block) {
 
 
 const prevButton = document.createElement('button');
-prevButton.textContent = "prev"
+prevButton.textContent = "prev";
 prevButton.onclick = goprve;
 prevButton.classList.add("prevbutton");
 
@@ -32,19 +32,13 @@ const slideWrapper = document.querySelector(".slider-wrapper");
 // Append the previous button element to the slideWrapper
 slideWrapper.appendChild(prevButton);
 
-
-const nextbutton = document.createElement('button');
-nextbutton.classList.add("nextbutton");
-nextbutton.textContent = "next";
-nextbutton.onclick = gonext
-
-// Get the element with the "slider-wrapper" class
-
+const nextButton = document.createElement('button');
+nextButton.classList.add("nextbutton");
+nextButton.textContent = "next";
+nextButton.onclick = gonext;
 
 // Append the previous button element to the slideWrapper
-slideWrapper.appendChild(nextbutton);
-
-
+slideWrapper.appendChild(nextButton);
 
 const pictureElements = document.querySelectorAll('.default-content-wrapper picture img');
 
@@ -53,14 +47,13 @@ pictureElements.forEach((picture) => {
   picture.classList.add('slide');
 });
 
-
 const defaultContentWrapper = document.querySelector(".section.slider-wrapper .default-content-wrapper");
-defaultContentWrapper.style.width =   "100%";
-defaultContentWrapper.style.height =   "500px";
-defaultContentWrapper.style.position =   "relative"
-defaultContentWrapper.style.margin =   "auto"
+defaultContentWrapper.style.width = "100%";
+defaultContentWrapper.style.height = "500px";
+defaultContentWrapper.style.position = "relative";
+defaultContentWrapper.style.margin = "auto";
 
-const slides = document.getElementsByClassName("slide");
+const slides = [...document.getElementsByClassName("slide")]; // Convert HTMLCollection to array
 
 // Loop through each slide and apply styles 
 for (let i = 0; i < slides.length; i++) {
@@ -70,27 +63,15 @@ for (let i = 0; i < slides.length; i++) {
   // slides[i].style.transition = "absolute";
 }
 
+slides.forEach((slide, index) => {
+  slide.style.left = `${index * 100}%`;
+  slide.style.top = "30";
+});
 
-
-slides.forEach((slide , index)=>{
-  slide.style.left = `${index * 100}%`
-  slide.style.top = "30"
-})
-
-
-
-const slideimage = ()=>{
-  slides.foreach(
-    (slide) => {
-      slide.style.transform = `translateX(-${counter * 100} %)`
-    }
-  )
+function goprve() {
+  console.log("prev");
 }
 
-function goprve(){
-  console.log("prev")
-}
-
-function gonext(){
-  console.log("next")
+function gonext() {
+  console.log("next");
 }

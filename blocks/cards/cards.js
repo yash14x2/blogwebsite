@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cards = document.querySelectorAll(".cards-carousel li");
   const prevBtn = document.querySelector(".prev-btn");
   const nextBtn = document.querySelector(".next-btn");
+  console.log(carousel)
 
   let currentIndex = 0;
   const cardWidth = cards[0].offsetWidth;
@@ -83,4 +84,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-console.log(carousel)
+

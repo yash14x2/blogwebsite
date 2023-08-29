@@ -22,7 +22,7 @@ export default function decorate(block) {
 
 
 const prevButton = document.createElement('button');
-prevButton.textContent = "Prev"; 
+prevButton.value = "prev"
 prevButton.classList.add("prevbutton");
 
 // Get the element with the "slider-wrapper" class
@@ -34,7 +34,7 @@ slideWrapper.appendChild(prevButton);
 
 const nextbutton = document.createElement('button');
 nextbutton.classList.add("nextbutton");
-nextButton.textContent = "Next";
+nextbutton.value = "next"
 
 // Get the element with the "slider-wrapper" class
 

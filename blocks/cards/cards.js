@@ -13,46 +13,9 @@ export default function decorate(block) {
     ul.append(li);
   });
   ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
-  
-  // Remove the existing content of the block
   block.textContent = '';
-
-
-
-
-
-  // Add more styles as needed for the outerWrapper and other elements
+  block.append(ul);
 }
-
-
-  // Create a new outer wrapper div
-  const outerWrapper = document.createElement('div');
-  outerWrapper.className = 'outer-wrapper';
-
-  // Move the existing content to the outer wrapper
-  while (block.firstChild) {
-    outerWrapper.appendChild(block.firstChild);
-  }
-
-  // Append the outer wrapper to the block
-  block.appendChild(outerWrapper);
-
-  // Set styles for the outer wrapper
-  outerWrapper.style.width = "100%"; // Set to desired width
-  outerWrapper.style.height = "500px"; // Set to desired height
-  outerWrapper.style.position = "relative";
-  outerWrapper.style.overflow = "hidden";
-
-  // Apply additional styles to the outer wrapper if needed
-
-  // Add more styles as needed for the inner content
-
-  // Select the .default-content-wrapper element
-  const defaultContentWrapper = outerWrapper.querySelector(".default-content-wrapper");
-
-  // Loop through each <picture> element and add the "slide" class
-
-
 
 const pictureElements = document.querySelectorAll('.default-content-wrapper picture');
 

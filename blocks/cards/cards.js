@@ -29,3 +29,13 @@ const defaultContentWrapper = document.querySelector(".section.slider-wrapper .d
 defaultContentWrapper.style.width =   "60%";
 defaultContentWrapper.style.height =   "500px";
 defaultContentWrapper.style.position =   "relative"
+defaultContentWrapper.style.margin =   "auto"
+
+const slides = document.getElementsByClassName("slide");
+
+// Loop through each slide and apply styles
+for (let i = 0; i < slides.length; i++) {
+  slides[i].style.width = "100%";
+  slides[i].style.height = "100%";
+  slides[i].style.position = "absolute";
+}

@@ -53,6 +53,12 @@ display: table-cell;
     margin-bottom: 0;
     font-size: 16px;
 }
+.columns-container .columns-wrapper .columns-2-cols #experience-engineering{
+  color: #0A0A0A;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+}
 @media (max-width: 767px) {
 header nav{
 margin:0 !important;

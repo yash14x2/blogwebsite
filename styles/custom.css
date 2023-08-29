@@ -65,6 +65,12 @@ display: table-cell;
     font-size: 24px;
     font-weight: 400;
 }
+.columns-container .columns-wrapper .columns-2-cols p{
+      font-size: 14px;
+    color: #0A0A0A;
+    font-weight: 300;
+    line-height: 17px;
+}
 @media (max-width: 767px) {
 header nav{
 margin:0 !important;

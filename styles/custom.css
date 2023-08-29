@@ -5,6 +5,7 @@
 main .section.tekno-strip {
   background-color: var(--tekno-strip-bg);
   color : var(--background-color);
+  padding:10px;
 }
 .cxm-wrapper .default-content-wrapper #cxm-accelerator{
   text-align:center;

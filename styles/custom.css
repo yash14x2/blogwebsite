@@ -1,0 +1,6 @@
+:root{
+  --tekno-strip-bg: #16234d;
+}
+main .section.tekno-strip {
+  background-color: var(--tekno-strip-bg);
+}

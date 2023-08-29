@@ -91,8 +91,12 @@ const slideimage = () => {
 
 function goprve() {
   console.log("prev");
+  counter--
+  slideimage()
 }
 
 function gonext() {
   console.log("next");
+  counter++
+  slideimage()
 }

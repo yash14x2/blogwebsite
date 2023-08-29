@@ -23,6 +23,7 @@ export default function decorate(block) {
 
 const prevButton = document.createElement('button');
 prevButton.textContent = "prev"
+prevButton.onclick = goprve;
 prevButton.classList.add("prevbutton");
 
 // Get the element with the "slider-wrapper" class
@@ -34,7 +35,8 @@ slideWrapper.appendChild(prevButton);
 
 const nextbutton = document.createElement('button');
 nextbutton.classList.add("nextbutton");
-nextbutton.textContent = "next"
+nextbutton.textContent = "next";
+nextbutton.onclick = gonext
 
 // Get the element with the "slider-wrapper" class
 
@@ -83,4 +85,12 @@ const slideimage = ()=>{
       slide.style.transform = `translateX(-${counter * 100} %)`
     }
   )
+}
+
+function goprve(){
+  console.log("prev")
+}
+
+function gonext(){
+  console.log("next")
 }

@@ -60,7 +60,7 @@ defaultContentWrapper.style.height =   "500px";
 defaultContentWrapper.style.position =   "relative"
 defaultContentWrapper.style.margin =   "auto"
 
-const slides = document.getElementsByClassName("slide");
+const slides = document.getElementsByClassName("slider");
 
 // Loop through each slide and apply styles 
 for (let i = 0; i < slides.length; i++) {

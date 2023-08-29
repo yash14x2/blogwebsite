@@ -1,5 +1,6 @@
 :root{
   --tekno-strip-bg: #16234d;
+  --bullet-red : #cf2e2e;
 }
 main .section.tekno-strip {
   background-color: var(--tekno-strip-bg);
@@ -14,4 +15,7 @@ main .section.tekno-strip {
 .cxm-wrapper .default-content-wrapper p .slide{
   display:flex;
   justify-content:center;
+}
+.cxm-card-col-wrapper ul li::marker{
+  color:var(--bullet-red);
 }

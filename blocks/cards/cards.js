@@ -17,6 +17,21 @@ export default function decorate(block) {
   block.append(ul);
 }
 
+
+
+
+
+const prevButton = document.createElement('button');
+prevButton.classList.add("prevbutton");
+
+// Get the element with the "slider-wrapper" class
+const slideWrapper = document.querySelector(".slider-wrapper");
+
+// Append the previous button element to the slideWrapper
+slideWrapper.appendChild(prevButton);
+
+
+
 const pictureElements = document.querySelectorAll('.default-content-wrapper picture img');
 
 // Loop through each <picture> element and add the "slide" class
@@ -38,4 +53,22 @@ for (let i = 0; i < slides.length; i++) {
   slides[i].style.width = "100%";
   slides[i].style.height = "100%";
   slides[i].style.position = "absolute";
+  // slides[i].style.transition = "absolute";
+}
+
+
+
+slides.forEach((slide , index)=>{
+  slide.style.left = `${index * 100}%`
+  slide.style.top = "30"
+})
+
+
+
+const slideimage = ()=>{
+  slides.foreach(
+    (slide) => {
+      slide.style.transform = `translateX(-${counter * 100} %)`
+    }
+  )
 }

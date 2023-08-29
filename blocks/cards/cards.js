@@ -26,31 +26,31 @@ pictureElements.forEach((picture) => {
 
 
 // Select the .default-content-wrapper element
-const defaultContentWrapper = document.querySelectorAll(".default-content-wrapper");
+// const defaultContentWrapper = document.querySelector(".default-content-wrapper");
 
-// Set styles for the element
-defaultContentWrapper.style.width = "100%"; // Set to 100% or appropriate value
-defaultContentWrapper.style.height = "500px";
-defaultContentWrapper.style.position = "relative";
-defaultContentWrapper.style.overflow = "hidden";
-defaultContentWrapper.style.margin = "auto";
-
-
-// Add more styles as needed
+// // Set styles for the element
+// defaultContentWrapper.style.width = "100%"; // Set to 100% or appropriate value
+// defaultContentWrapper.style.height = "500px";
+// defaultContentWrapper.style.position = "relative";
+// defaultContentWrapper.style.overflow = "hidden";
+// defaultContentWrapper.style.margin = "auto";
 
 
+// // Add more styles as needed
 
 
 
-// Select the .default-content-wrapper element
 
-// Add more styles as needed
-// Get all elements with the class "slide"
-const slides = document.getElementsByClassName("slide");
 
-// Loop through each slide and apply styles
-for (let i = 0; i < slides.length; i++) {
-  slides[i].style.width = "100%";
-  slides[i].style.height = "100%";
-  slides[i].style.position = "absolute";
-}
+// // Select the .default-content-wrapper element
+
+// // Add more styles as needed
+// // Get all elements with the class "slide"
+// const slides = document.getElementsByClassName("slide");
+
+// // Loop through each slide and apply styles
+// for (let i = 0; i < slides.length; i++) {
+//   slides[i].style.width = "100%";
+//   slides[i].style.height = "100%";
+//   slides[i].style.position = "absolute";
+// }

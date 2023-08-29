@@ -81,3 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
   prevBtn.addEventListener("click", prevCard);
   nextBtn.addEventListener("click", nextCard);
 });
+
+
+console.log(carousel)

@@ -63,11 +63,11 @@ defaultContentWrapper.style.overflow = "hidden";
 
 
 prevButton.style.position = "absolute"
-prevButton.style.left = "50%"
+prevButton.style.left = "43%"
 
 
 nextbutton.style.position = "absolute"
-nextbutton.style.left = "43%"
+nextbutton.style.left = "50%"
 
 
 const slides = document.querySelectorAll(".slide");

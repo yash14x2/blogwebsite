@@ -74,6 +74,7 @@ for (let i = 0; i < slides.length; i++) {
 }
 
 const slideArray = Array.from(slides);
+console.log(slideArray);
 
 slideArray.forEach((slide, index) => {
   slide.style.left = `${index * 100}%`;

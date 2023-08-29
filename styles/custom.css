@@ -11,3 +11,7 @@ main .section.tekno-strip {
 .cxm-wrapper .default-content-wrapper #cxm-accelerator + p{
   text-align:center;
 }
+.cxm-wrapper .default-content-wrapper p .slide{
+  display:flex;
+  justify-content:center;
+}

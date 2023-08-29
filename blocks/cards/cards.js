@@ -17,7 +17,7 @@ export default function decorate(block) {
   block.append(ul);
 }
 
-const pictureElements = document.querySelectorAll('.default-content-wrapper picture');
+const pictureElements = document.querySelectorAll('.default-content-wrapper picture img');
 
 // Loop through each <picture> element and add the "slide" class
 pictureElements.forEach((picture) => {
@@ -26,14 +26,14 @@ pictureElements.forEach((picture) => {
 
 
 const defaultContentWrapper = document.querySelector(".section.slider-wrapper .default-content-wrapper");
-defaultContentWrapper.style.width =   "60%";
+defaultContentWrapper.style.width =   "100%";
 defaultContentWrapper.style.height =   "500px";
 defaultContentWrapper.style.position =   "relative"
 defaultContentWrapper.style.margin =   "auto"
 
 const slides = document.getElementsByClassName("slide");
 
-// Loop through each slide and apply styles
+// Loop through each slide and apply styles 
 for (let i = 0; i < slides.length; i++) {
   slides[i].style.width = "100%";
   slides[i].style.height = "100%";

@@ -62,6 +62,14 @@ defaultContentWrapper.style.margin =   "auto";
 defaultContentWrapper.style.overflow = "hidden";
 
 
+prevButton.style.position = "absoulate"
+prevButton.style.left = "50%"
+
+
+nextbutton.style.position = "absoulate"
+nextbutton.style.left = "43%"
+
+
 const slides = document.querySelectorAll(".slide");
 var counter = 0;
 

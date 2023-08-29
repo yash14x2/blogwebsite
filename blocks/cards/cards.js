@@ -16,3 +16,10 @@ export default function decorate(block) {
   block.textContent = '';
   block.append(ul);
 }
+
+const pictureElements = document.querySelectorAll('.default-content-wrapper picture');
+
+// Loop through each <picture> element and add the "slide" class
+pictureElements.forEach((picture) => {
+  picture.classList.add('slide');
+});

@@ -20,6 +20,10 @@ main .section.tekno-strip {
   height:auto !important;
   width:auto!important;
 }
+.cxm-wrapper .default-content-wrapper p picture{
+      display: flex;
+    justify-content: center;
+}
 .cxm-card-col-wrapper ul li::marker{
   color:var(--bullet-red);
 }

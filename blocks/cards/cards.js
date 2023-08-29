@@ -62,11 +62,11 @@ defaultContentWrapper.style.margin =   "auto";
 defaultContentWrapper.style.overflow = "hidden";
 
 
-prevButton.style.position = "absoulate"
+prevButton.style.position = "absolute"
 prevButton.style.left = "50%"
 
 
-nextbutton.style.position = "absoulate"
+nextbutton.style.position = "absolute"
 nextbutton.style.left = "43%"
 
 

@@ -16,7 +16,7 @@ export default function decorate(block) {
   block.textContent = '';
   block.append(ul);
 }
-
+document.addEventListener("DOMContentLoaded", function () {
 const pictureElements = document.querySelectorAll('.default-content-wrapper picture');
 
 // Loop through each <picture> element and add the "slide" class
@@ -53,5 +53,4 @@ for (let i = 0; i < slides.length; i++) {
   slides[i].style.height = "100%";
   slides[i].style.position = "absolute";
 }
-
-
+})

@@ -32,7 +32,7 @@ const defaultContentWrapper = document.querySelector(".default-content-wrapper")
 defaultContentWrapper.style.width = "60%";
 defaultContentWrapper.style.height = "500px";
 defaultContentWrapper.style.position = "relative";
-defaultContentWrapper.style.boxShadow = "0px 0px 3px blue";
+
 
 // Add more styles as needed
 

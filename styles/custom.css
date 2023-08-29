@@ -79,21 +79,20 @@ display: table-cell;
   color:var(--white);
 }
 .columns-wrapper .columns-2-cols .columns-img-col img{
-   bottom: 15%;
   display: block;
-  position: absolute;
-  animation: linear infinite alternate;
+  position: relative;
+  animation: linear ;
   animation-name: run;
   animation-duration: 2s;
 }
 @-webkit-keyframes run {
     0% {
-      left: 0;
+      right: 0;
       transform: translateX(0);
     }
     100% {
-      left: 100%;
-      transform: translateX(-100%);
+      right: 50%;
+      transform: translateX(-50%);
     }
 }
 @media (max-width: 767px) {

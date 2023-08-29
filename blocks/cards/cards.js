@@ -50,7 +50,7 @@ const pictureElements = document.querySelectorAll('.default-content-wrapper pict
 
 // Loop through each <picture> element and add the "slide" class
 pictureElements.forEach((picture) => {
-  picture.classList.add('slider');
+  picture.classList.add('slide');
 });
 
 
@@ -60,7 +60,7 @@ defaultContentWrapper.style.height =   "500px";
 defaultContentWrapper.style.position =   "relative"
 defaultContentWrapper.style.margin =   "auto"
 
-const slides = document.getElementsByClassName("slider");
+const slides = document.getElementsByClassName("slide");
 
 // Loop through each slide and apply styles 
 for (let i = 0; i < slides.length; i++) {

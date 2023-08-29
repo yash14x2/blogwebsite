@@ -19,3 +19,6 @@ main .section.tekno-strip {
 .cxm-card-col-wrapper ul li::marker{
   color:var(--bullet-red);
 }
+.cxm-card-col-wrapper ul{
+  padding-left:20px;
+}

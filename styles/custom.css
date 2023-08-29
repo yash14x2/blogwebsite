@@ -28,3 +28,20 @@ main .section.tekno-strip {
 .cxm-card-col-wrapper .columns-wrapper .columns-2-cols div:last-child{
   margin-bottom:0;
 }
+.tekno-strip .columns-wrapper .columns-4-cols + div h3{
+  display: table-cell;
+    vertical-align: middle;
+    padding: 20px 14px 20px 0;
+    width: 70px;
+    font-weight: 300;
+    font-size: 48px;
+}
+.tekno-strip .columns-wrapper .columns-4-cols + div p{
+display: table-cell;
+    vertical-align: middle;
+    padding: 20px 0;
+    text-align: left;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-size: 16px;
+}

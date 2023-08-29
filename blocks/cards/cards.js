@@ -67,9 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevBtn = document.querySelector(".prev-btn");
   const nextBtn = document.querySelector(".next-btn");
  
-
   let currentIndex = 0;
-  const cardWidth = cards[0].offsetWidth;
+  const cardWidth = cards[0].getBoundingClientRect().width;
 
   // Move to the next card
  function nextCard() {

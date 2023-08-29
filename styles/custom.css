@@ -92,7 +92,7 @@ display: table-cell;
     }
     100% {
       right: 50%;
-      transform: translateX(-50%);
+      transform: translateX(50%);
     }
 }
 @media (max-width: 767px) {

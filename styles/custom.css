@@ -3,4 +3,5 @@
 }
 main .section.tekno-strip {
   background-color: var(--tekno-strip-bg);
+  color : var(--background-color);
 }

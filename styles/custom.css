@@ -61,9 +61,10 @@ display: table-cell;
 }
 .columns-container .columns-wrapper .columns-2-cols #experiences-cant-only-be-designed,
 .columns-container .columns-wrapper .columns-2-cols #they-need-to-be-engineered{
-    color: #0A0A0A;
-    font-size: 24px;
-    font-weight: 400;
+  color: #0A0A0A;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 ;
 }
 .columns-container .columns-wrapper .columns-2-cols p{
       font-size: 14px;

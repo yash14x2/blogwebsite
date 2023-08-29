@@ -81,7 +81,7 @@ display: table-cell;
 .columns-wrapper .columns-2-cols .columns-img-col img{
   display: block;
   position: relative;
-  animation: linear ;
+  animation: normal ;
   animation-name: run;
   animation-duration: 2s;
 }

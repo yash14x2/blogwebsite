@@ -15,33 +15,45 @@ export default function decorate(block) {
   ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   
   // Remove the existing content of the block
+  block.textContent = '';
+
+
+
 
 
   // Add more styles as needed for the outerWrapper and other elements
 }
-block.textContent = '';
 
-// Create a new carousel wrapper div
-const carouselWrapper = document.createElement('div');
-carouselWrapper.className = 'carousel-wrapper';
 
-// Append the ul (with the generated li elements) to the carousel wrapper
-carouselWrapper.append(ul);
+  // Create a new outer wrapper div
+  const outerWrapper = document.createElement('div');
+  outerWrapper.className = 'outer-wrapper';
 
-// Create a new div to wrap the carousel wrapper
-const outerWrapper = document.createElement('div');
-outerWrapper.className = 'outer-wrapper';
+  // Move the existing content to the outer wrapper
+  while (block.firstChild) {
+    outerWrapper.appendChild(block.firstChild);
+  }
 
-// Append the carousel wrapper to the outer wrapper
-outerWrapper.append(carouselWrapper);
+  // Append the outer wrapper to the block
+  block.appendChild(outerWrapper);
 
-// Append the outer wrapper to the block
-block.append(outerWrapper);
+  // Set styles for the outer wrapper
+  outerWrapper.style.width = "100%"; // Set to desired width
+  outerWrapper.style.height = "500px"; // Set to desired height
+  outerWrapper.style.position = "relative";
+  outerWrapper.style.overflow = "hidden";
 
-// Set styles for the carousel wrapper
-carouselWrapper.style.width = "100%"; // Set to desired width
-carouselWrapper.style.height = "100%"; // Set to desired height
-carouselWrapper.style.overflow = "hidden"; // Apply overflow hidden
+  // Apply additional styles to the outer wrapper if needed
+
+  // Add more styles as needed for the inner content
+
+  // Select the .default-content-wrapper element
+  const defaultContentWrapper = outerWrapper.querySelector(".default-content-wrapper");
+
+  // Loop through each <picture> element and add the "slide" class
+
+
+
 const pictureElements = document.querySelectorAll('.default-content-wrapper picture');
 
 // Loop through each <picture> element and add the "slide" class

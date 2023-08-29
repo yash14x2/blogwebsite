@@ -28,7 +28,7 @@ main .section.tekno-strip {
 .cxm-card-col-wrapper .columns-wrapper .columns-2-cols div:last-child{
   margin-bottom:0;
 }
-/* .tekno-strip .columns-wrapper .columns-4-cols h3{
+.tekno-strip .columns-wrapper .columns-4-cols h3{
   display: table-cell;
     vertical-align: middle;
     padding: 20px 14px 20px 0;
@@ -44,4 +44,4 @@ display: table-cell;
     line-height: 18px;
     margin-bottom: 0;
     font-size: 16px;
-} */
+}

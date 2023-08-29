@@ -62,7 +62,7 @@ defaultContentWrapper.style.margin =   "auto";
 defaultContentWrapper.style.overflow = "hidden";
 
 
-const slides = [...document.getElementsByClassName("slide")];
+const slides = document.getElementsByClassName("slide");
 
 // Loop through each slide and apply styles 
 for (let i = 0; i < slides.length; i++) {
@@ -72,9 +72,9 @@ for (let i = 0; i < slides.length; i++) {
   // slides[i].style.transition = "absolute";
 }
 
+const slideArray = Array.from(slides);
 
-
-slides.forEach((slide , index)=>{
+slideArray.forEach((slide , index)=>{
   slide.style.left = `${index * 100}%`
   slide.style.top = "30"
 })
@@ -83,7 +83,7 @@ var counter = 0;
 
 const slideimage = ()=>{
 
-  slides.foreach(
+  slideArray.foreach(
     (slide) => {
       slide.style.transform = `translateX(-${counter * 100} %)`
     }

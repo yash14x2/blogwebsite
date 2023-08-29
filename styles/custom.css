@@ -17,6 +17,8 @@ main .section.tekno-strip {
   display:flex;
   justify-content:center;
   position: relative !important;
+  height:auto !important;
+  width:auto!important;
 }
 .cxm-card-col-wrapper ul li::marker{
   color:var(--bullet-red);

@@ -84,16 +84,19 @@ display: table-cell;
   animation: normal ;
   animation-name: run;
   animation-duration: 2s;
+  animation-timing-function: ease;
 }
 @-webkit-keyframes run {
-    0% {
+/*     0% {
       right: 0;
       transform: translateX(0);
     }
     100% {
       right: 10%;
       transform: translateX(0%);
-    }
+    } */
+ from {right: 0px;}
+  to {right: 300px;}
 }
 @media (max-width: 767px) {
 header nav{

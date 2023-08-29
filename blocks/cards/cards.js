@@ -74,26 +74,23 @@ for (let i = 0; i < slides.length; i++) {
 
 const slideArray = Array.from(slides);
 
-slideArray.forEach((slide , index)=>{
+slideArray.forEach((slide, index) => {
   slide.style.left = `${index * 100}%`;
-  slide.style.top = "30px"
-})
+  slide.style.top = "30px"; // You should specify a unit for the top value, like "px"
+});
 
 var counter = 0;
 
-const slideimage = ()=>{
-
-  slideArray.foreach(
-    (slide) => {
-      slide.style.transform = `translateX(-${counter * 100}%)`
-    }
-  )
+const slideimage = () => {
+  slideArray.forEach((slide) => {
+    slide.style.transform = `translateX(-${counter * 100}%)`;
+  });
 }
 
-function goprve(){
-  console.log("prev")
+function goprve() {
+  console.log("prev");
 }
 
-function gonext(){
-  console.log("next")
+function gonext() {
+  console.log("next");
 }

@@ -16,3 +16,68 @@ export default function decorate(block) {
   block.textContent = '';
   block.append(ul);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector(".cards-carousel");
+  const cards = document.querySelectorAll(".cards-carousel li");
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
+
+  let currentIndex = 0;
+  const cardWidth = cards[0].offsetWidth;
+
+  // Move to the next card
+  function nextCard() {
+    if (currentIndex < cards.length - 1) {
+      currentIndex++;
+      updateCarousel();
+    }
+  }
+
+  // Move to the previous card
+  function prevCard() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  }
+
+  // Update carousel position
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  }
+
+  // Attach click events to navigation buttons
+  prevBtn.addEventListener("click", prevCard);
+  nextBtn.addEventListener("click", nextCard);
+});

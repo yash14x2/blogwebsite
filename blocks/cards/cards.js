@@ -50,7 +50,7 @@ const pictureElements = document.querySelectorAll('.default-content-wrapper pict
 
 // Loop through each <picture> element and add the "slide" class
 pictureElements.forEach((picture) => {
-  picture.classList.add('slide');
+  picture.classList.add('slider');
 });
 
 

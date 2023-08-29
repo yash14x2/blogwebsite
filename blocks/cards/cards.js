@@ -75,8 +75,8 @@ for (let i = 0; i < slides.length; i++) {
 const slideArray = Array.from(slides);
 
 slideArray.forEach((slide , index)=>{
-  slide.style.left = `${index * 100}%`
-  slide.style.top = "30"
+  slide.style.left = `${index * 100}%`;
+  slide.style.top = "30px"
 })
 
 var counter = 0;
@@ -85,7 +85,7 @@ const slideimage = ()=>{
 
   slideArray.foreach(
     (slide) => {
-      slide.style.transform = `translateX(-${counter * 100} %)`
+      slide.style.transform = `translateX(-${counter * 100}%)`
     }
   )
 }

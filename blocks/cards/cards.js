@@ -69,6 +69,7 @@ for (let i = 0; i < slides.length; i++) {
   slides[i].style.width = "100%";
   slides[i].style.height = "100%";
   slides[i].style.position = "absolute";
+  slides[i].style.left = `${i * 100}%`;
   // slides[i].style.transition = "absolute";
 }
 

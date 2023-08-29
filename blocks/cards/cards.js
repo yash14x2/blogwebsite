@@ -29,7 +29,7 @@ pictureElements.forEach((picture) => {
 const defaultContentWrapper = document.querySelector(".default-content-wrapper");
 
 // Set styles for the element
-defaultContentWrapper.style.width = "100%"; // Set to 100% or appropriate value
+defaultContentWrapper.style.width = "60%"; // Set to 100% or appropriate value
 defaultContentWrapper.style.height = "500px";
 defaultContentWrapper.style.position = "relative";
 defaultContentWrapper.style.overflow = "hidden";

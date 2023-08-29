@@ -23,3 +23,9 @@ const pictureElements = document.querySelectorAll('.default-content-wrapper pict
 pictureElements.forEach((picture) => {
   picture.classList.add('slide');
 });
+
+
+const defaultContentWrapper = document.querySelector(".section.slider-wrapper .default-content-wrapper");
+defaultContentWrapper.style.width =   "60%";
+defaultContentWrapper.style.height =   "500px";
+defaultContentWrapper.style.position =   "relative"

@@ -13,44 +13,31 @@ export default function decorate(block) {
     ul.append(li);
   });
   ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  
+  // Remove the existing content of the block
   block.textContent = '';
-  block.append(ul);
+
+  // Create a new carousel wrapper div
+  const carouselWrapper = document.createElement('div');
+  carouselWrapper.className = 'carousel-wrapper';
+
+  // Append the ul (with the generated li elements) to the carousel wrapper
+  carouselWrapper.append(ul);
+
+  // Create a new div to wrap the carousel wrapper
+  const outerWrapper = document.createElement('div');
+  outerWrapper.className = 'outer-wrapper';
+
+  // Append the carousel wrapper to the outer wrapper
+  outerWrapper.append(carouselWrapper);
+
+  // Append the outer wrapper to the block
+  block.append(outerWrapper);
+
+  // Set styles for the carousel wrapper
+  carouselWrapper.style.width = "100%"; // Set to desired width
+  carouselWrapper.style.height = "100%"; // Set to desired height
+  carouselWrapper.style.overflow = "hidden"; // Apply overflow hidden
+
+  // Add more styles as needed for the outerWrapper and other elements
 }
-
-const pictureElements = document.querySelectorAll('.default-content-wrapper picture');
-
-// Loop through each <picture> element and add the "slide" class
-pictureElements.forEach((picture) => {
-  picture.classList.add('slide');
-});
-
-
-// Select the .default-content-wrapper element
-// const defaultContentWrapper = document.querySelector(".default-content-wrapper");
-
-// // Set styles for the element
-// defaultContentWrapper.style.width = "100%"; // Set to 100% or appropriate value
-// defaultContentWrapper.style.height = "500px";
-// defaultContentWrapper.style.position = "relative";
-// defaultContentWrapper.style.overflow = "hidden";
-// defaultContentWrapper.style.margin = "auto";
-
-
-// // Add more styles as needed
-
-
-
-
-
-// // Select the .default-content-wrapper element
-
-// // Add more styles as needed
-// // Get all elements with the class "slide"
-// const slides = document.getElementsByClassName("slide");
-
-// // Loop through each slide and apply styles
-// for (let i = 0; i < slides.length; i++) {
-//   slides[i].style.width = "100%";
-//   slides[i].style.height = "100%";
-//   slides[i].style.position = "absolute";
-// }

@@ -48,6 +48,7 @@ defaultContentWrapper.style.width = "100%";
 defaultContentWrapper.style.height = "500px";
 defaultContentWrapper.style.position = "relative";
 defaultContentWrapper.style.margin = "auto";
+defaultContentWrapper.style.overflow = "hidden";
 
 const slides = [...document.getElementsByClassName("slide")]; // Convert HTMLCollection to array
 

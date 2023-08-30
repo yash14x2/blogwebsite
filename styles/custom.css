@@ -89,6 +89,9 @@ display: table-cell;
 main .section.tekno-cards-wrapper{
   background-color:var(--tekno-strip-bg);
 }
+.tekno-cards-wrapper .default-content-wrapper h2#news-and-updates{
+  color:var(--white);
+}
 @media (max-width: 767px) {
   header nav{
     margin:0 !important;

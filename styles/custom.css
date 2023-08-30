@@ -3,6 +3,7 @@
   --bullet-red : #cf2e2e;
   --white: #fff;
   --black : #000;
+  --grey : #333;
 }
 main .section.tekno-strip {
   background-color: var(--tekno-strip-bg);
@@ -100,6 +101,10 @@ main .section.tekno-cards-wrapper{
 }
 .tekno-cards-wrapper .cards-wrapper .cards ul li .cards-card-body h5 a:hover{
   color: var(--bullet-red);
+}
+.tekno-cards-wrapper .cards-wrapper .cards ul li .cards-card-body p{
+  color: var(--grey);
+  font-size:16px;
 }
 @media (max-width: 767px) {
   header nav{

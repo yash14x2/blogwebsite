@@ -78,7 +78,7 @@ display: table-cell;
   line-height:normal;
   color:var(--white);
 }
-.hero-section-wrapper.columns-wrapper .columns-2-cols .columns-img-col img{
+.hero-section-wrapper .columns-2-cols .columns-img-col img{
   display: block;
   position: relative;
   animation: normal ;

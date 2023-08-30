@@ -2,6 +2,7 @@
   --tekno-strip-bg: #16234d;
   --bullet-red : #cf2e2e;
   --white: #fff;
+  --black : #000;
 }
 main .section.tekno-strip {
   background-color: var(--tekno-strip-bg);
@@ -91,6 +92,9 @@ main .section.tekno-cards-wrapper{
 }
 .tekno-cards-wrapper .default-content-wrapper h2#news-and-updates{
   color:var(--white);
+}
+.tekno-cards-wrapper .cards-wrapper .cards ul li .cards-card-body h5{
+  color: var(--black)
 }
 @media (max-width: 767px) {
   header nav{

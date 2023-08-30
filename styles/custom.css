@@ -93,6 +93,7 @@ main .section.tekno-cards-wrapper{
 }
 .tekno-cards-wrapper .default-content-wrapper h2#news-and-updates{
   color:var(--white);
+  margin-top:0;
 }
 .tekno-cards-wrapper .cards-wrapper .cards ul li .cards-card-body h5 a{
   color: var(--black);

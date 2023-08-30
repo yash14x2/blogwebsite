@@ -86,6 +86,9 @@ display: table-cell;
     }
 
 }
+main .section.tekno-cards-wrapper{
+  background-color:var(--tekno-strip-bg);
+}
 @media (max-width: 767px) {
   header nav{
     margin:0 !important;

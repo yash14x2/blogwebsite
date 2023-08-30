@@ -14,17 +14,6 @@ main .section.tekno-strip {
 .cxm-wrapper .default-content-wrapper #cxm-accelerator + p{
   text-align:center;
 }
-.cxm-wrapper .default-content-wrapper p .slide{
-  display:flex;
-  justify-content:center;
-  position: relative !important;
-  height:auto !important;
-  width:auto!important;
-}
-.cxm-wrapper .default-content-wrapper p picture{
-      display: flex;
-    justify-content: center;
-}
 .cxm-card-col-wrapper ul li::marker{
   color:var(--bullet-red);
 }

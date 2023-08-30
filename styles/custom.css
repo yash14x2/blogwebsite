@@ -98,8 +98,10 @@ display: table-cell;
 
 }
 @media (max-width: 767px) {
-header nav{
-margin:0 !important;
-}
-  
+  header nav{
+    margin:0 !important;
+  }
+  .hero-section-wrapper .columns-2-cols .columns-img-col img{
+    animation: none;
+  }
 }

@@ -93,8 +93,11 @@ main .section.tekno-cards-wrapper{
 .tekno-cards-wrapper .default-content-wrapper h2#news-and-updates{
   color:var(--white);
 }
-.tekno-cards-wrapper .cards-wrapper .cards ul li .cards-card-body h5{
+.tekno-cards-wrapper .cards-wrapper .cards ul li .cards-card-body h5 a{
   color: var(--black)
+}
+.tekno-cards-wrapper .cards-wrapper .cards ul li .cards-card-body h5 a:hover{
+  color: var(--bullet-red)
 }
 @media (max-width: 767px) {
   header nav{

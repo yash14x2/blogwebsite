@@ -94,10 +94,12 @@ main .section.tekno-cards-wrapper{
   color:var(--white);
 }
 .tekno-cards-wrapper .cards-wrapper .cards ul li .cards-card-body h5 a{
-  color: var(--black)
+  color: var(--black);
+  font-size: 17px;
+  line-height: 19px;
 }
 .tekno-cards-wrapper .cards-wrapper .cards ul li .cards-card-body h5 a:hover{
-  color: var(--bullet-red)
+  color: var(--bullet-red);
 }
 @media (max-width: 767px) {
   header nav{

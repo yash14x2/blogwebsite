@@ -111,7 +111,7 @@ function gonext() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const slider = tns({
-    container: '.tekno-news-cards-wrapper .cards-wrapper .cards ul',
+    container: '.tekno-news-cards-wrapper',
     loop: true,
     items: 1,
     slideBy: 'page',

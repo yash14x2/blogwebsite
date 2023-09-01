@@ -1,5 +1,4 @@
 import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
-import { tns } from "./node_modules/tiny-slider/src/tiny-slider"
 
 export default function decorate(block) {
   /* change to ul, li */

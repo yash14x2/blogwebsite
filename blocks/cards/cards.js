@@ -111,7 +111,7 @@ function gonext() {
 }
 
 // document.addEventListener("DOMContentLoaded", function () {
-  import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
+  // import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
 
   const slider = tns({
     container: '.tekno-news-cards-wrapper',

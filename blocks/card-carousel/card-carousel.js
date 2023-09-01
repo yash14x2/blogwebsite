@@ -1,6 +1,5 @@
 $(document).ready(function () {
-    var newsCard = document.querySelectorAll(".tekno-news-cards-wrapper .cards-wrapper ul");
-    $(newsCard).slick({
+    $(".tekno-news-cards-wrapper").find(".cards ul").slick({
         speed : 1000,
         autoplay: false,
         infinite: true,

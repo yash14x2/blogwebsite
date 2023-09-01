@@ -111,10 +111,10 @@ function gonext() {
 
 
 $(document).ready(function () {
-    $('.tekno-news-cards-wrapper .cards ul').slick({
-        autoplaySpeed: 1000,
+    var newsCard = document.querySelectorAll(".tekno-news-cards-wrapper .cards-wrapper ul");
+    $(newsCard).slick({
         speed : 1000,
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         speed: 3000,
         slidesToShow: 3,

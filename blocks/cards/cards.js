@@ -1,4 +1,5 @@
 import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
+import {tns} from './src/tiny-slider.js';
 
 export default function decorate(block) {
   /* change to ul, li */
@@ -110,6 +111,7 @@ function gonext() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+ 
   const slider = tns({
     container: '.tekno-news-cards-wrapper',
     loop: true,

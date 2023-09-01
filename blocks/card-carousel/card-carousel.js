@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.tekno-news-cards-wrapper ul').slick({
+    $('.tekno-news-cards-wrapper').slick({
         speed : 1000,
         autoplay: false,
         infinite: true,

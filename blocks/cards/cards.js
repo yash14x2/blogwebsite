@@ -111,8 +111,8 @@ function gonext() {
 
 
 $(document).ready(function () {
-    var newsCard = document.querySelectorAll(".tekno-news-cards-wrapper .cards-wrapper .cards ul");
-    $(newsCard).slick({
+    // var newsCard = document.querySelectorAll(".tekno-news-cards-wrapper .cards-wrapper .cards ul");
+    $('.cards').slick({
         speed : 1000,
         autoplay: false,
         infinite: true,

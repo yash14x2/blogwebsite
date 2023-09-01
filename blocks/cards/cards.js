@@ -110,7 +110,7 @@ function gonext() {
   slideimage()
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
   // import {tns} from './src/tiny-slider.js';
   
   const slider = tns({
@@ -127,4 +127,4 @@ document.addEventListener("DOMContentLoaded", function () {
     controlsContainer: "#customize-controls",
   });
   
-});
+// });

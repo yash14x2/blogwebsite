@@ -122,16 +122,6 @@ document.addEventListener("DOMContentLoaded", function () {
     mouseDrag: true,
     lazyload: true,
     controlsContainer: "#customize-controls",
-    responsive: {
-        640: {
-            items: 2,
-        },
-        
-        768: {
-            items: 3,
-        }
-    }
-  
   });
   
 });

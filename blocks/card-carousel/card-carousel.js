@@ -1,8 +1,7 @@
 $(document).ready(function () {
-    $('.tekno-news-cards-wrapper').slick({
-        autoplaySpeed: 1000,
+    $('.tekno-news-cards-wrapper .default-content-wrapper .cards-wrapper .cards ul').slick({
         speed : 1000,
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         speed: 3000,
         slidesToShow: 3,

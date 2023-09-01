@@ -108,3 +108,31 @@ function gonext() {
   counter++
   slideimage()
 }
+
+function newsCardCarousel(){
+  const slider = tns({
+    container: '.tekno-news-cards-wrapper .cards-wrapper .cards ul',
+    loop: true,
+    items: 1,
+    slideBy: 'page',
+    nav: false,    
+    autoplay: true,
+    speed: 400,
+    autoplayButtonOutput: false,
+    mouseDrag: true,
+    lazyload: true,
+    controlsContainer: "#customize-controls",
+    responsive: {
+        640: {
+            items: 2,
+        },
+        
+        768: {
+            items: 3,
+        }
+    }
+
+  });
+}
+
+newsCardCarousel();

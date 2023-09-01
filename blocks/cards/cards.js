@@ -112,7 +112,7 @@ function gonext() {
 
 $(document).ready(function () {
     // var newsCard = document.querySelectorAll(".tekno-news-cards-wrapper .cards-wrapper .cards ul");
-    $('.cards').slick({
+    $('.cards ul').slick({
         infinite: false,
         speed: 3000,
         slidesToShow: 3,

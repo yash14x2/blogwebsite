@@ -111,13 +111,14 @@ function gonext() {
 
 
 $(document).ready(function () {
-    var newsCard = document.querySelectorAll(".tekno-news-cards-wrapper .cards-wrapper .cards ul");
-    $('.tekno-news-cards-wrapper .cards-wrapper .cards ul').slick({
-        infinite: false,
-        speed: 3000,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
-        dots: false,
-     });
+  $(".tekno-news-cards-wrapper").find(".cards ul").slick({
+      speed : 1000,
+      autoplay: false,
+      infinite: true,
+      speed: 3000,
+      slidesToShow: 3,
+      centerMode: true,
+      variableWidth: true,
+      arrows: false,
+   });
 });

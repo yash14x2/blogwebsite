@@ -111,7 +111,7 @@ function gonext() {
 
 
 $(document).ready(function () {
-  $(".tekno-news-cards-wrapper").find(".cards ul").slick({
+  $(".tekno-news-cards-wrapper").find(".cards-wrapper .cards ul").slick({
       speed : 1000,
       autoplay: false,
       infinite: true,

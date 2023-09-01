@@ -109,7 +109,7 @@ function gonext() {
   slideimage()
 }
 
-function newsCardCarousel(){
+document.addEventListener("DOMContentLoaded", function () {
   const slider = tns({
     container: '.tekno-news-cards-wrapper .cards-wrapper .cards ul',
     loop: true,
@@ -131,8 +131,7 @@ function newsCardCarousel(){
             items: 3,
         }
     }
-
+  
   });
-}
-
-newsCardCarousel();
+  
+});

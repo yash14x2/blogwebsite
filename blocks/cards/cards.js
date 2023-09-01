@@ -110,8 +110,8 @@ function gonext() {
   slideimage()
 }
 
-// document.addEventListener("DOMContentLoaded", function () {
-  import {tns} from './src/tiny-slider.js';
+document.addEventListener("DOMContentLoaded", function () {
+  // import {tns} from './src/tiny-slider.js';
   
   const slider = tns({
     container: '.tekno-news-cards-wrapper',
@@ -127,4 +127,4 @@ function gonext() {
     controlsContainer: "#customize-controls",
   });
   
-// });
+});

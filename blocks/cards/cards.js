@@ -24,8 +24,7 @@ prevButton.textContent = "prev"
 prevButton.onclick = goprve;
 prevButton.classList.add("prevbutton");
 
-const ulElement = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper ul');
-console.log(ulElement);
+
 
 
 // Get the element with the "slider-wrapper" class
@@ -114,6 +113,8 @@ function gonext() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+const ulElement = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper ul');
+console.log(ulElement);
   // import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
  
 

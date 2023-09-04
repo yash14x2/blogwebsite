@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
 
   const slider = tns({
-    container: '.tekno-news-cards-wrapper',
+    container: '.tekno-news-cards-wrapper .cards-wrapper .cards ul',
     loop: true,
     items: 1,
     slideBy: 'page',

@@ -117,12 +117,13 @@ let sliderInitialized = false; // To track whether the slider has been initializ
 // Function to initialize the slider
 function initializeSlider() {
   const ulElement = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper ul');
+  ulElement.classList.add("news-card-slider")
 
   if (ulElement && !sliderInitialized) {
     console.log('Initializing slider...');
 
     const slider = tns({
-      container: '.tekno-news-cards-wrapper .cards-wrapper .cards ul',
+      container: '.news-card-slider',
       loop: true,
       items: 1,
       slideBy: 'page',

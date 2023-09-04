@@ -110,13 +110,12 @@ function gonext() {
   slideimage()
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  // import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
+
 var newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper');
 var ulElement = newsCardWrapper.querySelector('.cards-wrapper ul');
 ulElement.classList.add('news-card-slider');
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  // import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
 
   const slider = tns({
     container: '.tekno-news-cards-wrapper',

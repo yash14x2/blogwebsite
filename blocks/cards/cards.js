@@ -114,7 +114,7 @@ function gonext() {
   // import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
 
   const slider = tns({
-    container: '.tekno-news-cards-wrapper .cards-wrapper .cards ul',
+    container: '.tekno-news-cards-wrapper',
     loop: true,
     items: 1,
     slideBy: 'page',

@@ -19,10 +19,6 @@ export default function decorate(block) {
 }
 
 
-
-const newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper ul');
-newsCardWrapper.classList.add("news-card-slider");
-
 const prevButton = document.createElement('button');
 prevButton.textContent = "prev"
 prevButton.onclick = goprve;
@@ -113,7 +109,9 @@ function gonext() {
 
 document.addEventListener("DOMContentLoaded", function () {
   // import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
-
+  const newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper ul');
+  newsCardWrapper.classList.add("news-card-slider");
+  
   const slider = tns({
     container: '.news-card-slider',
     loop: true,

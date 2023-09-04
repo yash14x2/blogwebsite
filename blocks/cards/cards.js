@@ -23,8 +23,9 @@ const prevButton = document.createElement('button');
 prevButton.textContent = "prev"
 prevButton.onclick = goprve;
 prevButton.classList.add("prevbutton");
-var newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper .cards ul');
-console.log(newsCardWrapper);
+
+const ulElement = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper ul');
+console.log(ulElement);
 
 
 // Get the element with the "slider-wrapper" class

@@ -112,18 +112,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper .cards ul');
   newsCardWrapper.classList.add("news-card-slider");
 
-  const slider = tns({
-    container: '.news-card-slider',
-    loop: true,
-    items: 1,
-    slideBy: 'page',
-    nav: false,    
-    autoplay: true,
-    speed: 400,
-    autoplayButtonOutput: false, 
-    controls: false,
-    mouseDrag: true,
-    lazyload: true,
-  });
-  
+    const slider = tns({
+      container: '.tekno-news-cards-wrapper .cards-wrapper .cards ul',
+      loop: true,
+      items: 1,
+      slideBy: 'page',
+      nav: false,    
+      autoplay: true,
+      speed: 400,
+      autoplayButtonOutput: false, 
+      controls: false,
+      mouseDrag: true,
+      lazyload: true,
+    });
 });

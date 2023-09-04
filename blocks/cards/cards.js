@@ -107,10 +107,12 @@ function gonext() {
   slideimage()
 }
 
+  var newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper .cards ul');
+  newsCardWrapper.classList.add("news-card-slider");
+
 document.addEventListener("DOMContentLoaded", function () {
   // import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
-  const newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper .cards ul');
-  newsCardWrapper.classList.add("news-card-slider");
+ 
 
     const slider = tns({
       container: '.tekno-news-cards-wrapper .cards-wrapper .cards ul',

@@ -124,7 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplayButtonOutput: false,
     mouseDrag: true,
     lazyload: true,
-    controlsContainer: "#customize-controls",
   });
   
 });

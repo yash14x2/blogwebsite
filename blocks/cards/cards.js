@@ -21,7 +21,7 @@ export default function decorate(block) {
 
 
 const newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper ul');
-newsCardWrapper.classList.add('news-card-slider');
+newsCardWrapper.classList.add("news-card-slider");
 
 const prevButton = document.createElement('button');
 prevButton.textContent = "prev"

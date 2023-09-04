@@ -20,7 +20,9 @@ export default function decorate(block) {
 
 
 
-
+var newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper');
+var ulElement = newsCardWrapper.querySelector('.cards-wrapper ul');
+ulElement.classList.add('news-card-slider');
 
 const prevButton = document.createElement('button');
 prevButton.textContent = "prev"
@@ -112,13 +114,6 @@ function gonext() {
 
 document.addEventListener("DOMContentLoaded", function () {
   // import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
-
-var newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper');
-var ulElements = newsCardWrapper.querySelectorAll('.cards-wrapper ul');
-ulElements.forEach(function(ulElement) {
-  ulElement.classList.add('news-card-slider');
-});
-
 
   const slider = tns({
     container: '.news-card-slider',

@@ -109,9 +109,9 @@ function gonext() {
 
 document.addEventListener("DOMContentLoaded", function () {
   // import { tns } from "./node_modules/tiny-slider/src/tiny-slider";
-  const newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper ul');
+  const newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper .cards ul');
   newsCardWrapper.classList.add("news-card-slider");
-  
+
   const slider = tns({
     container: '.news-card-slider',
     loop: true,

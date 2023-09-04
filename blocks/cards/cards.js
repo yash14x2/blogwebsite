@@ -125,7 +125,8 @@ ulElement.classList.add('news-card-slider');
     nav: false,    
     autoplay: true,
     speed: 400,
-    autoplayButtonOutput: false,
+    autoplayButtonOutput: false, 
+    controls: false,
     mouseDrag: true,
     lazyload: true,
   });

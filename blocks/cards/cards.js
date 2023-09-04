@@ -23,6 +23,8 @@ const prevButton = document.createElement('button');
 prevButton.textContent = "prev"
 prevButton.onclick = goprve;
 prevButton.classList.add("prevbutton");
+var newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper .cards ul');
+newsCardWrapper.classList.add("news-card-slider");
 
 // Get the element with the "slider-wrapper" class
 const slideWrapper = document.querySelector(".slider-wrapper");
@@ -107,8 +109,7 @@ function gonext() {
   slideimage()
 }
 
-  var newsCardWrapper = document.querySelector('.tekno-news-cards-wrapper .cards-wrapper .cards ul');
-  newsCardWrapper.classList.add("news-card-slider");
+
 
 document.addEventListener("DOMContentLoaded", function () {
   // import { tns } from "./node_modules/tiny-slider/src/tiny-slider";

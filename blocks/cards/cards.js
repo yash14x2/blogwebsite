@@ -125,7 +125,7 @@ function initializeSlider() {
     const slider = tns({
       container: '.news-card-slider',
       loop: true,
-      items: 3,
+      items: 2,
       slideBy: 'page',
       nav: false,
       autoplay: true,

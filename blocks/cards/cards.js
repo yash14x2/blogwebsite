@@ -134,6 +134,11 @@ function initializeSlider() {
       controls: false,
       mouseDrag: true,
       lazyload: true,
+      responsive: {
+        768: {
+            items: 2,
+        },
+      }
     });
 
     sliderInitialized = true; // Set to true to avoid reinitialization

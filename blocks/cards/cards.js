@@ -136,7 +136,7 @@ function initializeSlider() {
       lazyload: true,
       responsive: {
         768: {
-            items: 2,
+            items: 1,
         },
       }
     });
